@@ -5,10 +5,13 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style='margin : 0px; overflow: hidden;'>
-	<a-scene embedded arjs='sourceType: webcam;'>
+	<a-scene embedded arjs='trackingMethod: best;'>
 		<a-marker-camera type="pattern" url="m1.patt">
             <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-            <a-text value="Hello, World!"></a-text>
+            <a-text rotation='0 0 0' value="aaaaaa"></a-text>
+            <a-text rotation='90 0 0' value="xxxxxx"></a-text>
+            <a-text rotation='0 90 0' value="yyyyyy"></a-text>
+            <a-text rotation='0 0 90' value="zzzzzz"></a-text>
         </a-marker-camera>
 	</a-scene>
 </body>
