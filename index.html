@@ -1,16 +1,16 @@
 <!-- Initial code written by Jerome Etienne. Source = https://codepen.io/jeromeetienne/pen/mRqqzb -->
 <head>
-    <title>Test 8</title>
+    <title>Test 9</title>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='trackingMethod: best;'>
-		<a-marker-camera type="pattern" url="m1.patt">
-            <a-image src="KeeleAR.png"></a-image>
-            <a-image position='5 0 1' rotation='90 0 0' src="KeeleAR.png"></a-image>
-            <a-image position='0 0 1' rotation='90 0 0' src="KeeleAR.png"></a-image>
-            <a-image position='0 0 -1' rotation='90 0 0' src="KeeleAR.png"></a-image>
+        <a-assets>
+            <img id="pic" src="KeeleAR.png"/>
+        </a-assets>
+		<a-marker-camera type='pattern' url="m1.patt">
+            <a-entity geometry='primitive: plane; width: 4; height: auto' material='src: #pic;' position="0 0.5 0" text="This is Keele"></a-entity>
         </a-marker-camera>
 	</a-scene>
 </body>
