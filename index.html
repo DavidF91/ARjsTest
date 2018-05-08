@@ -1,6 +1,6 @@
 <!-- Initial code written by Jerome Etienne. Source = https://codepen.io/jeromeetienne/pen/mRqqzb -->
 <head>
-    <title>Test 12</title>
+    <title>Test 13</title>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
@@ -10,7 +10,9 @@
             <img id="pic" src="KeeleAR.png"/>
         </a-assets>
 		<a-marker-camera type='pattern' url="m1.patt">
-            <a-entity geometry='primitive: plane; width: 1; height: auto' material='src: #pic;' text="This is Keele"></a-entity>
+            <a-entity rotation="90 0 0">
+                <a-entity geometry='primitive: plane; width: 1; height: auto' material='src: #pic;' text="This is Keele"></a-entity>
+            </a-entity>
         </a-marker-camera>
 	</a-scene>
 </body>
