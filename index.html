@@ -7,13 +7,49 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='trackingMethod: best;'>
         <a-assets>
-           
+            <img id='aaa' src='frontmid.png'/>
+            <img id='bbb' src='frontleft.png'/>
+            <img id='ccc' src='frontright.png'/>
+            <img id='ddd' src='fronttop.png'/>
         </a-assets>
 		<a-marker-camera type='pattern' url="m1.patt">            
             <a-box color="lightgreen" height="1.5" width="1.4" depth=".05" rotation="0 0 0" position="0 0 .6" >
                 <a-plane color="lightblue" height="1.3" width="1.4" rotation="-90 0 0" position="0 -.7 -.65">
                 </a-plane>
-                <a-box color="red" height=".4" width=".65" depth=".4" position="0 0 -.2"></a-box>
+                 <a-entity position="0 0 -.15" scale=".25 .25 .25">
+                    <a-entity position="0 0 0" rotation="-90">
+                        <a-plane color="red"  position="-0.5 0 0" rotation="0 -90 0"></a-plane>
+                        <a-plane color="red" position="0.5 0 0" rotation="0 90 0"></a-plane>
+                        <a-plane color="red"  position="0 0.5 0" rotation="-90 0 0"></a-plane>
+                        <a-plane color="red"  position="0 -0.5 0" rotation="90 0 0"></a-plane>
+                        <a-plane src= "#aaa"  position="0 0 0.5" rotation=""></a-plane>
+                        <a-plane color="red"  position="0 0 -0.5" rotation="0 0 90"></a-plane>
+                    </a-entity>
+                    <a-entity position="-1 0 .1" rotation="-90" scale="1 .8 1">
+                        <a-plane color="red"  position="-0.5 0 0" rotation="0 -90 0"></a-plane>
+                        <a-plane color="red" position="0.5 0 0" rotation="0 90 0"></a-plane>
+                        <a-plane color="red"  position="0 0.5 0" rotation="-90 0 0"></a-plane>
+                        <a-plane color="red"  position="0 -0.5 0" rotation="90 0 0"></a-plane>
+                        <a-plane src= "#bbb"  position="0 0 0.5" rotation=""></a-plane>
+                        <a-plane color="red"  position="0 0 -0.5" rotation="0 0 90"></a-plane>
+                    </a-entity>
+                    <a-entity position="1 0 .1" rotation="-90" scale="1 .8 1">
+                        <a-plane color="red"  position="-0.5 0 0" rotation="0 -90 0"></a-plane>
+                        <a-plane color="red" position="0.5 0 0" rotation="0 90 0"></a-plane>
+                        <a-plane color="red"  position="0 0.5 0" rotation="-90 0 0"></a-plane>
+                        <a-plane color="red"  position="0 -0.5 0" rotation="90 0 0"></a-plane>
+                        <a-plane src= "#ccc"  position="0 0 0.5" rotation=""></a-plane>
+                        <a-plane color="red"  position="0 0 -0.5" rotation="0 0 90"></a-plane>
+                    </a-entity>
+                    <a-entity position="0 .5 -.7" rotation="-90" scale=".4 .4 .1">
+                        <a-plane color="red"  position="-0.5 0 0" rotation="0 -90 0"></a-plane>
+                        <a-plane color="red" position="0.5 0 0" rotation="0 90 0"></a-plane>
+                        <a-plane color="red"  position="0 0.5 0" rotation="-90 0 0"></a-plane>
+                        <a-plane color="red"  position="0 -0.5 0" rotation="90 0 0"></a-plane>
+                        <a-plane src= "#ddd"  position="0 0 0.5" rotation=""></a-plane>
+                        <a-plane color="red"  position="0 0 -0.5" rotation="0 0 90"></a-plane>
+                    </a-entity>
+                </a-entity>
                 <a-sphere color="black" radius=".01" phi-length="180" rotation="-180" position="0 0 -.05">
                     <a-entity position ="0 .5 .9" rotation="-90 180 0">
                         <a-entity position ="0 0 0" rotation="0 0 0" text="value: Intergrated Electricty Gas Heat Network; align:center; color:black; width:1.5"></a-entity>
